@@ -1,0 +1,174 @@
+a {
+    color: #E8DFCA;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#F5EFE6;
+}
+
+body {
+    margin: 0px;
+    text-align: center; /*This property needs to be in the parent. */
+    /* Will center everything inside the parent that DOES NOT have a width set. */
+    /* font-family: verdana, sans-serif;   /* Will affect all the text on the webpage */
+    /* Will first ask the browser to render the specific font [i.e. verdana] and if the browser doesn't have it, it will default to the broader family font [i.e. sans-serif]
+        You can stack fonts */
+    font-family: 'Merriweather', serif;
+    font-size: 20px; /* em and % in parents gets added on top of any sizes specified in the children - not the case with px bc px is static size*/
+    color: #40514E;
+}
+
+h1 {
+    /* font-size: 562.5%; /* 100% font size = 16px  - We want 90px --> 562.5% */
+    font-size: 5.625rem; /*1 em = 16px = 100% */
+    /* use 'rem' - root em - this will ignore settings set in the parent and only focus on the children setting. does not get affected by upstream size changes */
+    margin: 20px auto 0 auto; /* auto will center */
+    /* width: 10%;
+    margin: 0 auto 0 auto; /* 'Auto' will center a block element that has a width set */
+    font-family: 'Sacramento', cursive;
+    color: #E8DFCA;
+    line-height: 2;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #7895B2;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #7895B2;
+    font-weight: bolder;
+}
+
+hr {
+    border:none;
+    border-top: dotted;
+    border-color: #E8DFCA;
+    border-width: 6px;
+    width: 4%;
+    margin: 50px auto;
+}
+
+p {
+    line-height: 2;
+}
+
+
+
+.bottom-cloud {
+    position:absolute; /*Takes it out of the HTML flow and places it more-or-less randomly on the screen. */
+    bottom: 50px;
+    left: 250px;
+}
+
+.bottom-container {
+    /* background-color: #A0BCC2; */
+    background-color: #AEBDCA;
+    padding: 50px 0 20px;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+.code-img {
+    width: 25%;
+    float:right; /* Will allow all text to wrap around the image */
+    /* Float has a whole bunch of corner cases - only use float when REALLY necessary to WRAP text around an element. DON'T use for positioning */
+    padding-left: 30px;
+}
+
+.copyright {
+    color:#EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
+/*.code-skill-des {
+    clear:right;
+}
+.film-skill-des {
+    clear:left; /* Will clear the specified side from wrapping - think of it as the anti-float 
+}    
+*/
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.film-img {
+    width: 25%;
+    float:left;
+    padding-right: 30px;
+}
+
+.middle-container {
+    padding: 50px 0px;
+    background-color: #F5EFE6;
+}
+
+.personal-desc {
+    color: #40514E;
+    width: 30%;
+    margin: auto;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.profile-pic {
+    width: 15%;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.top-cloud {
+    position:absolute;
+    top: 60px;
+    right: 300px;
+}
+
+.top-container {
+    background-color: #AEBDCA;
+    position:relative;
+    padding: 100px 0px 10px;
+}
+
+
+
